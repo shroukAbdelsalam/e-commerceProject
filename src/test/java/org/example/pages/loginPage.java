@@ -5,18 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class loginPage {
-    WebDriver driver;
+    static WebDriver driver;
     public loginPage(WebDriver driver){
         this.driver=driver;
     }
-    public WebElement LocateEmailBox(){
+    public static WebElement LocateEmailBox(){
+        System.out.println("from locatemail");
         return driver.findElement(By.id("Email"));
     }
-    public WebElement LocatePasswordBox(){
+    public static WebElement LocatePasswordBox(){
         return driver.findElement(By.id("Password"));
     }
 
-    public WebElement LocateLogInButton(){
+    public static WebElement LocateLogInButton(){
         return driver.findElement(By.className("button-1"));
     }
 }

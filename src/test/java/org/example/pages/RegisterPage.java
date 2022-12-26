@@ -13,7 +13,7 @@ public class RegisterPage {
         return driver.findElement(By.id("FirstName"));
     }
     public WebElement LocateLastName(){
-      return   driver.findElement(By.id("LastName"));
+        return   driver.findElement(By.id("LastName"));
     }
     public WebElement LocateEmail(){
         return driver.findElement(By.id("Email"));
